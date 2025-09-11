@@ -7,7 +7,7 @@ from sanic.response import json, text
 from application.database.db import execute_query, fetch_all, fetch_one
 from application.schemas.schemas import SportCreate, SportUpdate
 
-bp = Blueprint("sports", url_prefix="/sport")
+bp = Blueprint("sports", url_prefix="/sports")
 
 @bp.route('/', methods=['GET'])
 async def get_all_sports(request):
